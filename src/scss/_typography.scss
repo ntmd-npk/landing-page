@@ -1,0 +1,35 @@
+@import "variable";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+html,
+body {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: $font-primary;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+.section {
+  &__top {
+    text-align: center;
+    max-width: 47rem;
+    margin: 0 auto;
+  }
+  &__title {
+    @include text(700, 4rem, $letter-spacing-primary);
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: $txt-color-light;
+    padding-bottom: 1rem;
+    @media #{$info-screen-768} {
+      font-size: 3.5rem;
+    }
+    @media #{$info-screen-575} {
+      font-size: 3rem;
+    }
+  }
+  &__sub-title {
+    @include text(500, 1.4rem, $letter-spacing-primary);
+    line-height: 1.8;
+    color: $txt-color-light;
+  }
+}

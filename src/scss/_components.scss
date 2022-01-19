@@ -1,0 +1,33 @@
+.btn {
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  background: $primary-color;
+  @include text(700, 1.4rem, $letter-spacing-primary);
+  color: $txt-color-light;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: $hover-color;
+  }
+}
+.btn-round {
+  padding: 1.5rem 3.6rem;
+  border-radius: 3.7rem;
+  border: 1px solid $border-light;
+  outline: none;
+  background: transparent;
+  @include text(700, 1.4rem, $letter-spacing-primary);
+  color: $txt-color-light;
+  transition: all 0.3s ease-in-out;
+  &.active {
+    border: 1px solid $hover-color;
+    background: $primary-color;
+  }
+  &:hover {
+    border: 1px solid $hover-color;
+    background: $hover-color;
+  }
+}

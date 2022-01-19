@@ -1,0 +1,78 @@
+#pricing {
+  padding: 16rem;
+  background: $bg-dark;
+  @media #{$info-screen-992} {
+    padding: 0;
+  }
+}
+.pricing {
+  display: flex;
+  gap: 3rem;
+  padding-top: 9.6rem;
+  @media #{$info-screen-992} {
+    display: block;
+  }
+
+  &-box {
+    display: flex;
+    gap: 3rem;
+    padding: 5rem;
+    border: 1px solid $border-dark;
+    border-radius: 1rem;
+    background: $bg-light;
+    &:first-child {
+      @media #{$info-screen-992} {
+        margin-bottom: 3rem;
+      }
+    }
+    @media #{$info-screen-575} {
+      display: block;
+      padding: 3rem;
+    }
+    &__left {
+      width: 50%;
+      flex-shrink: 0;
+      @media #{$info-screen-575} {
+        width: 100%;
+        padding-bottom: 3rem;
+      }
+    }
+    &__type {
+      padding-bottom: 1.5rem;
+      @include text(700, 2.4rem, $letter-spacing-second);
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+    &__description {
+      @include text(600, 1.4rem, $letter-spacing-primary);
+      color: $txt-color-second;
+    }
+    &__right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__price {
+      display: flex;
+      align-items: center;
+      @media #{$info-screen-575} {
+        width: 100%;
+        padding-bottom: 2.5rem;
+      }
+    }
+    &__number {
+      padding-right: 1rem;
+      @include text(700, 4rem, $letter-spacing-primary);
+      color: $primary-color;
+    }
+    &__unit {
+      & span {
+        @include text(700, 1.6rem, $letter-spacing-second);
+        color: $primary-color;
+      }
+      @include text(600, 1.4rem, $letter-spacing-primary);
+      color: $disabled-element-color;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+#feedback {
+  padding: 11.2rem 0;
+  background: $bg-dark;
+  @media #{$info-screen-575} {
+    padding: 7.5rem 0 8.5rem;
+  }
+}
+.feedback {
+  padding: 4rem 0;
+  max-width: 74.9rem;
+  margin: 8rem auto 0;
+
+  border: 1px solid $border-dark;
+  border-radius: 5px;
+  background: $bg-light;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 43.4rem;
+    margin: 0 auto;
+    @media #{$info-screen-575} {
+      padding: 0 4rem;
+    }
+  }
+  &__user {
+    &-avatar {
+      width: 9.6rem;
+      height: 9.6rem;
+    }
+    &-comment {
+      padding-top: 3rem;
+      @include text(500, 1.4rem, $letter-spacing-primary);
+    }
+    &-rating {
+      display: inline-flex;
+      gap: 0.5rem;
+      padding: 1.5rem;
+    }
+    &-star {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+    &-name {
+      padding-bottom: 0.8rem;
+      @include text(700, 2.4rem, $letter-spacing-second);
+      color: $txt-color;
+    }
+    &-job {
+      @include text(600, 1.4rem, $letter-spacing-primary);
+      color: $txt-color-second;
+    }
+  }
+}

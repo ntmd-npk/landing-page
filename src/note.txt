@@ -1,0 +1,2 @@
+npm run dev
+sass --watch scr/sass:dist/css

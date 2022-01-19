@@ -1,0 +1,64 @@
+.footer {
+  background: $bg-dark;
+  padding: 8rem 0;
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    @media #{$info-screen-992} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media #{$info-screen-575} {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+  &__column {
+    & ul {
+      padding-top: 2rem;
+    }
+    & li {
+      padding-bottom: 1rem;
+    }
+    & ul li a {
+      @include text(600, 1.4rem, $letter-spacing-primary);
+      color: $txt-color-light;
+      text-transform: capitalize;
+    }
+    @media #{$info-screen-575} {
+      padding-bottom: 3rem;
+    }
+  }
+  &__title {
+    @include text(700, 2.4rem, $letter-spacing-second);
+    color: $txt-color-light;
+    text-transform: capitalize;
+  }
+  &__description {
+    padding: 2.5rem 0;
+    @include text(500, 1.4rem, $letter-spacing-primary);
+    color: $txt-color-light;
+    text-transform: lowercase;
+  }
+  &__contacts {
+    display: flex;
+    gap: 2.4rem;
+    cursor: pointer;
+    & img {
+      transition: transform 0.1s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__owner {
+    height: 7.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include text(600, 1.4rem, $letter-spacing-primary);
+    text-transform: capitalize;
+    color: $txt-color-second;
+  }
+}
