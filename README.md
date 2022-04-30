@@ -1,8 +1,9 @@
-# building up a landing page website following a Figma design using SCSS
+### Landing Page
 
-https://www.figma.com/file/UBQ0rJux1zQC53qHwfI3e2/lfinance---Dark-html-finance-website-(Community)
+_practicing to build up a landing page website following a [Figma design](https://www.figma.com/file/UBQ0rJux1zQC53qHwfI3e2/lfinance---Dark-html-finance-website-(Community)) using SCSS
 
-To run:
+###### To run:
 
-- npm i
-- npm run dev
+> npm install
+> 
+> npm run dev
